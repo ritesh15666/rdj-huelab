@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RDJ HueLab</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>RDJ <span>HueLab</span></h1>
+        <p>Premium Color Theory Studio</p>
+    </header>
+
+    <div class="main-grid">
+
+        <div class="left-panel glass">
+            <h2>Primary Color</h2>
+            <input type="color" id="primaryColor" value="#ff7a00">
+
+            <h2>Scheme</h2>
+            <select id="schemeSelect">
+                <option value="monochromatic">Monochromatic</option>
+                <option value="complementary">Complementary</option>
+                <option value="analogous">Analogous</option>
+                <option value="triadic">Triadic</option>
+                <option value="tetradic">Tetradic</option>
+            </select>
+        </div>
+
+        <div class="wheel-panel glass">
+            <canvas id="colorWheel"></canvas>
+        </div>
+
+        <div class="palette-panel glass">
+            <h2>Generated Palette</h2>
+            <div id="palette" class="palette"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
